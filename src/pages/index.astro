@@ -12,11 +12,11 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<div class="container  px-8">
-			<div class="w-full">
+		<div class="px-8 sm:px-16 md:px-32 lg:px-96">
+			<div class="w-full sm:w-3/4 	">
 				<p class="font-bold mt-32 text-2xl">Hi,</p>
 				<h1 class="font-black text-6xl">WELCOME TO MY PORTFOLIO WEBSITE</h1>
-				<p class="text-lg mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum exercitationem, hic fugit consequatur illo beatae. Blanditiis tempore error veniam!</p>
+				<p class="text-lg md:text-xl mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum exercitationem, hic fugit consequatur illo beatae. Blanditiis tempore error veniam!</p>
 				<div class="mt-36 flex gap-4 ">
 					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none">
 						<path d="M22 3.99999C22 3.99999 21.3 6.09999 20 7.39999C21.6 17.4 10.6 24.7 2 19C4.2 19.1 6.4 18.4 8 17C3 15.5 0.5 9.59999 3 4.99999C5.2 7.59999 8.6 9.09999 12 8.99999C11.1 4.79999 16 2.39999 19 5.19999C20.1 5.19999 22 3.99999 22 3.99999Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -42,8 +42,8 @@
 					  </svg>
 					  <p class="font-bold text-3xl">About Me</p>
 				</div>
-				<p class="text-lg mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nobis soluta ducimus maiores rem minima, ab esse? Beatae harum ab iure tempore ad fuga accusamus! Dolor dignissimos quasi repudiandae atque quod laudantium modi dolorem est quos architecto obcaecati quibusdam natus distinctio culpa nobis soluta magni, ut quisquam aspernatur repellat praesentium.</p>
-				<p class="text-lg mt-4">Here are a few technologies I’ve been working with recently:</p>
+				<p class="text-lg mt-2 md:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nobis soluta ducimus maiores rem minima, ab esse? Beatae harum ab iure tempore ad fuga accusamus! Dolor dignissimos quasi repudiandae atque quod laudantium modi dolorem est quos architecto obcaecati quibusdam natus distinctio culpa nobis soluta magni, ut quisquam aspernatur repellat praesentium.</p>
+				<p class="text-lg mt-4 md:text-xl">Here are a few technologies I’ve been working with recently:</p>
 				<div class="grid grid-rows-3 grid-flow-col gap-2 mt-4">
 					<div class="flex">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -102,7 +102,7 @@
 					  </svg>
 					  <p class="font-bold text-3xl">Portfolio</p>
 				</div>
-				<p class="text-lg mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusantium quibusdam debitis non sint magnam aliquid minus omnis cumque dignissimos, est, nam veritatis voluptatum optio voluptates praesentium eum perspiciatis! Velit.</p>
+				<p class="text-lg mt-2 md:text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusantium quibusdam debitis non sint magnam aliquid minus omnis cumque dignissimos, est, nam veritatis voluptatum optio voluptates praesentium eum perspiciatis! Velit.</p>
 				<div class="mt-10">
 					<div class="flex mb-2 gap-2 justify-items-center">
 						<p class="text-2xl font-bold">Formasi web</p>
@@ -112,9 +112,11 @@
 							<path d="M8.33333 11.6667L17.5 2.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 						  </svg>
 					</div>
-					<img src="/image1.png" alt="image">
+					<div>
+						<img class="" src="/image1.png" alt="image">
+					</div>
 					<p class="text-slate-600 mt-4">github.com/romzy/formasi</p>
-					<p class="mt-2 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam sunt illum accusantium cum sint, a temporibus debitis odit dignissimos.</p>
+					<p class="mt-2 text-lg md:text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam sunt illum accusantium cum sint, a temporibus debitis odit dignissimos.</p>
 					<div class="flex gap-2 mt-2">
 						<div class="py-1 px-3 bg-slate-950 text-slate-50 text-sm rounded-2xl">Nexjs13</div>
 						<div class="py-1 px-3 bg-slate-950 text-slate-50 text-sm rounded-2xl">Tailwindcss</div>
@@ -133,7 +135,7 @@
 					</div>
 					<img src="/image2.png" alt="image">
 					<p class="text-slate-600 mt-4">github.com/romzy/profile</p>
-					<p class="mt-2 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam sunt illum accusantium cum sint, a temporibus debitis odit dignissimos.</p>
+					<p class="mt-2 text-lg md:text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam sunt illum accusantium cum sint, a temporibus debitis odit dignissimos.</p>
 					<div class="flex gap-2 mt-2">
 						<div class="py-1 px-3 bg-slate-950 text-slate-50 text-sm rounded-2xl">Astrojs</div>
 						<div class="py-1 px-3 bg-slate-950 text-slate-50 text-sm rounded-2xl">Tailwindcss</div>
@@ -147,13 +149,13 @@
 					  </svg>
 					  <p class="font-bold text-3xl">Get in Touch</p>
 				</div>
-				<div class="flex mt-10 ">
-					<h1 class="font-black basis-1/2 text-2xl leading-10 mt-6">let's code together while enjoying a cup of coffee.</h1>
-					<div class="basis-1/2">
-						<img src="/profilelogo.png" alt="">
+				<div class="flex mt-10 md:flex-col">
+					<h1 class="font-black text-3xl sm:text-4xl leading-10 md:leading-snug mt-4 md:text-7xl">let's code together while enjoying a cup of coffee.</h1>
+					<div class="flex justify-end">
+						<img class="md:w-72 md:mt-10" src="/profilelogo.png" alt="">
 					</div>
 				</div>
-				<div class="mt-20 flex justify-center gap-4 ">
+				<div class="mt-20 md:-mt-16 flex justify-center gap-4 ">
 					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none">
 						<path d="M22 3.99999C22 3.99999 21.3 6.09999 20 7.39999C21.6 17.4 10.6 24.7 2 19C4.2 19.1 6.4 18.4 8 17C3 15.5 0.5 9.59999 3 4.99999C5.2 7.59999 8.6 9.09999 12 8.99999C11.1 4.79999 16 2.39999 19 5.19999C20.1 5.19999 22 3.99999 22 3.99999Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 					  </svg>
@@ -170,7 +172,7 @@
 						<path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 					  </svg>
 				</div>
-				<p class="text-lg mt-10">Made with Astro and designed happily using Figma by Romzy</p>
+				<p class="text-lg mt-10 md:mt-28 md:text-xl">Made with Astro and designed happily using Figma by Romzy</p>
 			</div>
 		</div>
 	</body>
