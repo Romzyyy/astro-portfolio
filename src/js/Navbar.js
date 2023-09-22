@@ -4,9 +4,11 @@ window.onscroll = function () {
     const portfolio = document.getElementById('portfolio')
     const skill = document.getElementById('skill')
     const contact = document.getElementById('contact')
+    const writing = document.getElementById('writing')
     const fixNavAbout = about.offsetTop - 20
     const fixNavPortfolio = portfolio.offsetTop - 20
     const fixNavSkill = skill.offsetTop - 20
+    const fixNavWrite = writing.offsetTop - 20
     const fixNavContact = contact.offsetTop - 20
     const value = navbar.querySelector('h1')
 
@@ -26,11 +28,18 @@ window.onscroll = function () {
         value.textContent = 'Portfolio'
     } else if (
         window.pageYOffset >= fixNavSkill &&
-        window.pageYOffset < fixNavContact
+        window.pageYOffset < fixNavWrite
     ) {
         navbar.classList.remove('hidden')
         navbar.classList.add('fixed')
         value.textContent = 'Skill & Tools'
+    } else if (
+        window.pageYOffset >= fixNavWrite &&
+        window.pageYOffset < fixNavContact
+    ) {
+        navbar.classList.remove('hidden')
+        navbar.classList.add('fixed')
+        value.textContent = 'Writing'
     } else if (window.pageYOffset >= fixNavContact) {
         navbar.classList.remove('hidden')
         navbar.classList.add('fixed')
