@@ -1,9 +1,11 @@
 ---
+import Navbar from "../app/Navbar/Navbar.astro"
 import Header from "../app/Header/HeaderSection.astro"
 import About from "../app/About/AboutSection.astro"
 import Portfolio from "../app/Portfolio/PortfolioSection.astro";
 import Contact from "../app/Contact/ContactSection.astro"
 import Skill from "../app/SkillTools/SkillToolsSection.astro"
+import Footer from "../app/Footer/FooterSection.astro"
 ---
 
 <html lang="en">
@@ -16,14 +18,18 @@ import Skill from "../app/SkillTools/SkillToolsSection.astro"
 	</head>
 	<body>
 		<div class="px-8 sm:px-16 md:px-32 lg:px-96">
+			<img class="absolute -z-50 top-0 right-0" src="baground.png" alt="">
+			<Navbar/>
 			<Header/>
 			<About/>
 			<Portfolio/>
 			<Skill/>
 			<Contact/>
+			<Footer/>
 		</div>
 		<script>
 			import "../js/SkillAndTools.js";
+			import  "../js/Navbar.js";
 		</script>
 	</body>
 </html>
