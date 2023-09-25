@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
@@ -13,7 +14,11 @@ module.exports = {
 			extrabold: '800',
 			black: '1000',
 		  },
-		extend: {},
+		extend: {
+			fontFamily: {
+				sans: [ "Poppins", ...defaultTheme.fontFamily.sans],
+			  },
+		},
 	},
 	plugins: [
 		require('tailwind-scrollbar-hide')
