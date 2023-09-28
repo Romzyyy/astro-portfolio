@@ -7,21 +7,16 @@ import Contact from "../app/Contact/ContactSection.astro"
 import Skill from "../app/SkillTools/SkillToolsSection.astro"
 import Footer from "../app/Footer/FooterSection.astro"
 import Writing from "../app/writing/Writing.astro"
+import Layout from "../layout/layout.astro";
 ---
-<div class="mx-auto px-8 lg:px-20 xl:px-80">
-	<img class="absolute -z-50 top-0 right-0 lg:w-[500px] lg:h-[500px]" src="baground.png" alt="bacground">
-	<Navbar/>
-	<Header/>
-	<About/>
-	<Portfolio/>
-	<Skill/>
-	<Writing/>
-	<Contact/>
-	<Footer/>
-	<script>
-		import "../js/SkillAndTools.js";
-		import  "../js/Navbar.js";
-	</script>
-</div>
-
+<Layout>
+		<Navbar/>
+		<Header/>
+		<About/>
+		<Portfolio/>
+		<Skill/>
+		<Writing/>
+		<Contact/>
+		<Footer/>
+</Layout>
 
