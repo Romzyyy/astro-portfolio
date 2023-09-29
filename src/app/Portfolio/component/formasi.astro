@@ -1,0 +1,22 @@
+---
+import Label from "../../../component/label.astro";
+import Image from "../../../component/image.astro";
+import HeaderPortfolio from "../../../component/headerPortfolio.astro";
+---
+<div class="mt-8">
+    <div class="flex mb-2 gap-2 justify-items-center">
+    <HeaderPortfolio projectName="Formasi web" urlLink="https://formasi.vercel.app/">
+    </div>
+    <div class="flex overflow-x-scroll w-full h-auto gap-2 lg:gap-6 items-center scrollbar-hide">
+            <Image imageName="/image/image1.png"/>
+            <Image imageName="/image/image2.png"/>
+            <Image imageName="/image/image4.png"/>
+            <Image imageName="/image/image5.png"/>
+    </div>
+        <p class="mt-2 text-base">Developed and styled interactive web apps for information sytem collage, An interactive web application developed for information systems students, the UI is simple and the single page application is user friendly.</p>
+    <div class="flex gap-2 mt-2">
+        <Label content="NextJs"/>
+        <Label content="TailwindCss"/>
+        <Label content="DaisyUi"/>
+    </div>
+</div>
