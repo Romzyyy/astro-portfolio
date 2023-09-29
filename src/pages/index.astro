@@ -8,15 +8,25 @@ import Skill from "../app/SkillTools/SkillToolsSection.astro"
 import Footer from "../app/Footer/FooterSection.astro"
 import Writing from "../app/writing/Writing.astro"
 import Layout from "../layout/layout.astro";
+
 ---
 <Layout>
-		<Navbar/>
-		<Header/>
-		<About/>
-		<Portfolio/>
-		<Skill/>
-		<Writing/>
-		<Contact/>
-		<Footer/>
+	<div class="lg:flex lg:flex-row">
+		<div class="lg:basis-1/2">
+			<Header/>
+		</div>
+		<div class="lg:basis-1/2">
+			<Navbar/>
+			<About/>
+			<Portfolio/>
+			<Skill/>
+			<Writing/>
+			<Contact/>
+		</div>
+		<div class="lg:fixed lg:bottom-0 lg:w-4/12">
+			<Footer/>
+		</div>
+	</div>
+		
 </Layout>
 

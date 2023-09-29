@@ -1,10 +1,11 @@
 ---
 import Head from "./head.astro";
+import '@fontsource-variable/inter';
 ---
 <html lang="en">
 	<Head/>
 	<body>
-		<div class="mx-auto px-8 lg:px-20 xl:px-80">
+		<div class="mx-auto px-8 lg:px-20 xl:px-56">
             <img class="absolute -z-50 top-0 right-0 lg:w-[500px] lg:h-[500px] md:hidden" src="image/baground.png" alt="bacground">
             <img class="absolute -z-50 top-0 w-full left-0 opacity-10 invisible md:visible" src="image/bagroundLarge.png" alt="bacground">
             <slot/>
@@ -15,3 +16,9 @@ import Head from "./head.astro";
         </script>
 	</body>
 </html>
+
+<style>
+    body {
+  font-family: 'Inter Variable', sans-serif;
+}
+</style>
