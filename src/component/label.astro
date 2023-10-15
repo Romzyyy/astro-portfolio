@@ -1,4 +1,6 @@
 ---
-const {content} = Astro.props
+const {content, color, bgColor} = Astro.props
 ---
-<div class="py-1 px-3 bg-slate-950 text-slate-50 text-sm rounded-2xl opacity-80">{content}</div>
+<div class=` ${bgColor} rounded-2xl bg-opacity-40`>
+    <p class=`${color} text-sm py-1 px-5 font-semibold`>{content}</p>
+</div>
