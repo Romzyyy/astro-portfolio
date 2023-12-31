@@ -1,0 +1,21 @@
+---
+import Label from "../../../component/label.astro";
+import Image from "../../../component/image.astro";
+import HeaderPortfolio from "../../../component/headerPortfolio.astro";
+---
+<div class="mt-8">
+    <div class="flex mb-2 gap-2 justify-items-center">
+        <HeaderPortfolio projectName="Portofolio V1" urlLink="https://romzyyyv1.vercel.app/">
+    </div>
+    <div class="flex overflow-x-scroll w-full h-auto gap-2 lg:gap-6 items-center scrollbar-hide">
+            <Image imageName="/image/porto1.avif"/>
+            <Image imageName="/image/porto2.avif"/>
+            <Image imageName="/image/porto3.avif"/>
+            <Image imageName="/image/porto4.avif"/>
+    </div>
+        <p class="mt-2 text-base">Saya telah membuat web portofolio sederhana dengan HTML dan CSS. Proyek ini bertujuan menampilkan kemampuan desain dan pengembangan web, fokus pada presentasi diri. Dengan struktur dasar HTML dan tampilan estetis CSS, saya berusaha menciptakan situs yang bersih dan informatif.</p>
+    <div class="flex gap-2 mt-2">
+        <Label content="html" color="text-orange-600" bgColor="bg-orange-600"/>
+        <Label content="css" color="text-blue-600" bgColor="bg-blue-600"/>
+    </div>
+</div>
